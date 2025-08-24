@@ -1,5 +1,5 @@
 GAME_FIELD=[]
-from game_field import create_matrix
+from game_field1 import create_matrix
 create_matrix(GAME_FIELD)
 PLAYER_LOC = GAME_FIELD[0][0]
 WINDOW_HEIGHT = 250
