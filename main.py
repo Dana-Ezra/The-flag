@@ -12,5 +12,5 @@ def main():
         for event in pygame.event.get():
             if event.type==pygame.QUIT:
                 open_window=False
-            elif k
+            elif kk
 
