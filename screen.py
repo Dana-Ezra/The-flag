@@ -17,6 +17,6 @@ def draw_bush():
         #צריך לתרגם את המספר רנדום מאינדקס לקואורדינטות
         screen.blits(bush,place)
 
-# welcome_message=draw_massage
+# welcome_message=draw_massagee
 
 
