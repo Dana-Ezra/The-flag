@@ -28,16 +28,16 @@ def from_matrix_screen(matrix):
         dict_y[y]= index_y
     return dict_x,dict_y
 
-
-def dict_value(matrix1):
-    dict1 = {}
-    matrix = create_matrix(game_field)
-    x = from_matrix_screen(matrix)
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if  i in x[0].values():
-                if j in x[1].values():
-                    dict1[(i,j)] = (x[1].keys(x[1]))
+#
+# def dict_value(matrix1):
+#     dict1 = {}
+#     matrix = create_matrix(game_field)
+#     x = from_matrix_screen(matrix)
+#     for i in range(len(matrix)):
+#         for j in range(len(matrix[i])):
+#             if  i in x[0].values():
+#                 if j in x[1].values():
+#                     [i][j] =
 
 
 def flag_in_field(matrix):
