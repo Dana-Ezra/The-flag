@@ -1,16 +1,20 @@
 import pygame.image
 from game_field1 import game_field
 # soldier=pygame.image.load()
+import os
+solder_drawing=pygame.image.load(os.path.join("bin","soldier.png"))
 
 def soldier_location(matrix):
     list_of_soldier_index = []
-    for i in range(len(matrix)):
-      for j in range(len(matrix[i])):
-            if matrix[i][j] == "Soldier":
-                list_of_soldier_index.append((i,j))
+    for i in matrix:
+        for j in i:
+         if j=="Soldier":
+                list_of_soldier_index.append(matrix.index("Soldier"))
+         else:
+             continue
+
     return list_of_soldier_index
 
-print(soldier_location(game_field))
 list_soldier_loc = soldier_location(game_field)
 
 def soldier_legs(index_soldier):
