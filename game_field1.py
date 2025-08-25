@@ -35,9 +35,9 @@ def mine_in_board(matrix):
  for i in range(20):
     x = random.randint(0,25)
     y = random.randint(0,50)
-    if not x==0 and not y==0 and matrix[x][y]!="Flag" and matrix[x][y]!="Soldier":
-      matrix[x][y]="Mine"
- return matrix
+    if not matrix[x-1][y]=="Flag" and matrix[x-1][y]!="Soldier":
+      matrix[x-1][y]="Mine"
+ return print(matrix)
 
 game_field = mine_in_board(game_field)
 
