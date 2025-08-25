@@ -17,8 +17,11 @@ def main():
             if event.type==pygame.QUIT:
                 open_window=False
             # elif kk
-    matrix=[]
-    create_matrix(matrix)
-    flag_in_field(matrix)
+        matrix=[]
+        create_matrix(matrix)
+        flag_in_field(matrix)
+        bush=pygame.rect(100,150,  bush_drawing= pygame.image.load("C:\ Users\jbt\Downloads\נספחים\נספחים\ bin\grass.png"))
+        SCREEN.blits(bush)
+        pygame.display.update()
 
 main()
