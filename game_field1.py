@@ -1,5 +1,5 @@
 import random
-game_field =  []
+game_field = []
 
 def create_matrix(matrix):
     for i in range(25):
@@ -35,8 +35,8 @@ def mine_in_board(matrix):
  for i in range(20):
     x = random.randint(0,25)
     y = random.randint(0,50)
-    if not matrix[x-1][y]=="Flag" and matrix[x-1][y]!="Soldier":
-      matrix[x-1][y]="Mine"
+    if not matrix[x-1][y-1]=="Flag" and matrix[x-1][y-1]!="Soldier":
+      matrix[x-1][y-1]="Mine"
  return print(matrix)
 
 game_field = mine_in_board(game_field)
