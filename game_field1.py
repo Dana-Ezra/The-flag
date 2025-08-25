@@ -1,5 +1,5 @@
 import random
-game_field = []
+game_field =  []
 
 def create_matrix(matrix):
     for i in range(25):
