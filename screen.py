@@ -46,7 +46,7 @@ from_matrix_screen(SCREEN)
         #צריך לתרגם את המספר רנדום מאינדקס לקואורדינטות
         # screen.blits(bush,place)
 
-# welcome_message=draw_massagee
+# welcome_message=draw_massageew
 
 
 default_window(SCREEN)
